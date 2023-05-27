@@ -1,0 +1,46 @@
+@mixin font-notoSans-400 {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin font-notoSans-600 {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 600;
+}
+
+@mixin font-notoSans-700 {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+}
+
+
+@mixin wrapper($width) {
+  width: $width;
+  max-width: $width;
+  margin: 0 auto;
+}
+
+@mixin wrapper-small() {
+  padding: 0 3%;
+}
+
+@mixin large {
+  @media screen and (min-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    @content;
+  }
+}
+
+@mixin small {
+  @media screen and (min-width: 360px) and (max-width: 767px) {
+    @content;
+  }
+}
